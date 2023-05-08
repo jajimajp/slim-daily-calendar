@@ -2,16 +2,17 @@
  * @NOTE: Prepend a `~` to css file paths that are in your node_modules
  *        See https://github.com/webpack-contrib/sass-loader#imports
  */
+
+html {
+  height: 100%;
+  overflow: scroll;
+}
+
 body {
+  height: 200%;
   position: relative;
   color: white;
-  height: 100vh;
-  background: linear-gradient(
-    200.96deg,
-    #fedc2a -29.09%,
-    #dd5789 51.77%,
-    #7a2c9e 129.35%
-  );
+  background: #282d20;
   font-family: sans-serif;
   overflow-y: hidden;
   display: flex;
@@ -54,9 +55,11 @@ a:hover {
   text-decoration: none;
 }
 
-.Hello {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 0;
+#root {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: auto;
 }
