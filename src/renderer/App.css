@@ -18,6 +18,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
 
 button {
@@ -56,10 +57,30 @@ a:hover {
 }
 
 #root {
-  margin: 0;
-  padding: 0;
+  height: 100%;
+  width: 100%;
 }
 
-.container {
-  height: auto;
+.grid-container {
+  height: 100%;
+  padding: 12px 4px 0px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.grid {
+  position: relative;
+  height: 4%;
+  width: 100%;
+  border-top: 1px solid gray;
+}
+
+.grid-label {
+  position: absolute;
+  top: -13px;
+  left: -23px;
+  user-select: none;
+  color: gray;
+  width: 1.5rem;
+  text-align: center;
 }
